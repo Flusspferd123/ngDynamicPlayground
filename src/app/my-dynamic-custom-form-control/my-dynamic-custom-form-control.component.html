@@ -1,0 +1,12 @@
+<form [formGroup]="group">
+<ng-container [formGroup]="group">
+
+  <my-custom-form-control [formControlName]="model.id"
+                          [name]="model.name"
+                          [ngClass]="[getClass('element', 'control'), getClass('grid', 'control')]"
+                          (blur)="onBlur($event)"
+                          (change)="onChange($event)"
+                          (focus)="onFocus($event)"></my-custom-form-control>
+
+</ng-container>
+</form>

@@ -1,0 +1,16 @@
+<form [formGroup]="formGroup">
+
+  <dynamic-ng-bootstrap-form [group]="formGroup" [model]="formModel">
+    <ng-template modelId="myFormArray" let-group let-index="index" let-context="context">
+
+<div>{{testString | json}}</div>
+
+      <button type="button" (click)="removeInput(context, index)">Remove this input</button>
+
+    </ng-template>
+  </dynamic-ng-bootstrap-form>
+
+  <button type="button" (click)="addItem()">Add item</button>
+  <button type="button" (click)="clear()">Remove all items</button>
+
+</form>
