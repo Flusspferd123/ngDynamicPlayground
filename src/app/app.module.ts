@@ -14,7 +14,8 @@ import { MyDynamicCustomFormControlComponent } from './my-dynamic-custom-form-co
 import {DYNAMIC_FORM_CONTROL_MAP_FN} from "@ng-dynamic-forms/core";
 import {dynamicFormControlMapFn} from "./dynamicFormControlMapFn";
 import {MyCustomFormControlComponent} from "./my-costum-form-control/my-custom-form-control.component";
-import { RelatedFormControlsComponent } from './related-form-controls/related-form-controls.component';
+import { AccTestComponent } from './acc-test/acc-test.component';
+
 
 
 
@@ -29,7 +30,8 @@ import { RelatedFormControlsComponent } from './related-form-controls/related-fo
     FormControlEventsComponent,
     MyCustomFormControlComponent,
     MyDynamicCustomFormControlComponent,
-    RelatedFormControlsComponent,
+    AccTestComponent,
+
 
   ],
   imports: [
@@ -41,7 +43,8 @@ import { RelatedFormControlsComponent } from './related-form-controls/related-fo
   providers: [  {
     provide: DYNAMIC_FORM_CONTROL_MAP_FN,
     useValue: dynamicFormControlMapFn
-  }],
+  },
+  ],
   bootstrap: [AppComponent],
   entryComponents: [MyDynamicCustomFormControlComponent]
 })
